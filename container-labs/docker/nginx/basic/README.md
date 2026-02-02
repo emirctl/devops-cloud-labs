@@ -15,9 +15,10 @@ The project focuses on:
 
 
 ## Clone the repository 
+```bash
 git clone https://github.com/EmirTurkbey/container-labs.git
 cd nginx/basic
-
+```
 
 ## Repository Structure
 Docker -> Nginx image definition
