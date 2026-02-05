@@ -35,8 +35,10 @@ Import Google Cloud public key
 curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo gpg--dearmor -o /usr/share/keyrings/cloud.google.gpg
 ```
 
+
 Create a service account in https://www.console.cloud.google.com/
 Under IAM & Admin, generate a service account and create a new key and download it as JSON 
+
 
 Set up environment variable and point to the JSON file
 ```bash
@@ -46,6 +48,17 @@ export GOOGLE_APPLICATION_CREDENTIALS="/home/emir/serviceaccount.json"
 Verify authentication
 ```bash
 gcloud auth list
+```
+
+## Additional Notes
+
+Make sure that you have enabled Cloud Compute Engine API
+
+Check operating system images
+```bash
+gcloud compute images list --filter="name~'ubuntu-2204'"
+gcloud compute images list --filter="name~'debian'"
+gcloud compute images list --filter="name~'centos'"
 ```
 
 
@@ -70,3 +83,4 @@ Cleanup
 ```bash
 terraform destroy
 ```
+
