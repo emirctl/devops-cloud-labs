@@ -6,10 +6,10 @@ This repository demonstrates provisioning a basic Amazon VPC using Terraform.
 
 The project focuses on:
 
-- Terraform initialization
-- AWS provider configuration
-- Basic VPC resource creation
-- Terraform workflow (init → plan → apply → destroy)
+- Terraform initialization  
+- AWS provider configuration  
+- Basic VPC resource creation  
+- Terraform workflow (init → plan → apply → destroy)  
 
 ---
 
@@ -24,7 +24,7 @@ The project focuses on:
 ## Clone the Repository
 
 ```bash
-git clone https://github.com/EmirTurkbey/devops-lab.git
+git clone https://github.com/emirctl/devops-lab.git
 cd terraform-labs/01-basic-init-vpc
 ```
 
@@ -81,5 +81,6 @@ Remove (terminate) created infrastructure:
 ```bash
 terraform destory
 ```
+
 
 
